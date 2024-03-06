@@ -1,4 +1,4 @@
-package com.example.movie.data
+package com.example.movie.data.db
 
 import androidx.room.Dao
 import androidx.room.Insert

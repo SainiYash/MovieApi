@@ -1,4 +1,4 @@
-package com.example.movie.data
+package com.example.movie.data.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
@@ -11,4 +11,10 @@ version = 1,
     exportSchema = false
 )
 abstract class TMDBDDatabase : RoomDatabase() {
+
+    abstract fun movieDao(): MovieDao
+    abstract fun tvDao(): TvShowDao
+
+    abstract fun artistDao(): ArtistDao
+
 }
